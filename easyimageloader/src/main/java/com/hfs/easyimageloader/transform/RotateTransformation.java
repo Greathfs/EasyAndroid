@@ -1,4 +1,4 @@
-package com.hfs.easyimageloader.loader;
+package com.hfs.easyimageloader.transform;
 
 /**
  * @author HuangFusheng

@@ -1,4 +1,4 @@
-package com.hfs.easyimageloader.loader;
+package com.hfs.easyimageloader.utils;
 
 import android.annotation.SuppressLint;
 import android.content.ContentUris;
@@ -18,7 +18,7 @@ import android.provider.MediaStore;
  *
  * @author andy
  */
-public class BitmapUtils {
+public class BitmapUtil {
 
     /**
      * 设置图片大小

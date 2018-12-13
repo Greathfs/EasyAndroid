@@ -3,6 +3,9 @@ package com.hfs.easyimageloader;
 import android.content.Context;
 import android.net.Uri;
 
+import com.hfs.easyimageloader.listener.ILoaderStrategy;
+import com.hfs.easyimageloader.options.LoaderOptions;
+
 import java.io.File;
 
 /**

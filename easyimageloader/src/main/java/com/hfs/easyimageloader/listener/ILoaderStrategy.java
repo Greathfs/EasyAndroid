@@ -1,6 +1,8 @@
-package com.hfs.easyimageloader;
+package com.hfs.easyimageloader.listener;
 
 import android.content.Context;
+
+import com.hfs.easyimageloader.options.LoaderOptions;
 
 /**
  * @author HuangFusheng

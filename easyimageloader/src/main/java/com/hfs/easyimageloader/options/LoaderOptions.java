@@ -1,9 +1,13 @@
-package com.hfs.easyimageloader;
+package com.hfs.easyimageloader.options;
 
 import android.net.Uri;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IntRange;
 import android.view.View;
+
+import com.hfs.easyimageloader.listener.BitmapCallBack;
+import com.hfs.easyimageloader.listener.ILoaderStrategy;
+import com.hfs.easyimageloader.ImageLoader;
 
 import java.io.File;
 

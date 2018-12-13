@@ -1,4 +1,4 @@
-package com.hfs.easyimageloader.loader;
+package com.hfs.easyimageloader.transform;
 
 import android.graphics.Bitmap;
 import android.support.annotation.IntRange;
@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import com.bumptech.glide.load.Key;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
+import com.hfs.easyimageloader.utils.BitmapUtil;
 
 import java.security.MessageDigest;
 
@@ -32,7 +33,7 @@ public class BlurTransformation extends BitmapTransformation {
 
     @Override
     protected Bitmap transform(@NonNull BitmapPool pool, @NonNull Bitmap toTransform, int outWidth, int outHeight) {
-        return  BitmapUtils.fastBlur(toTransform,defaultRadius);
+        return  BitmapUtil.fastBlur(toTransform,defaultRadius);
     }
 
     @Override

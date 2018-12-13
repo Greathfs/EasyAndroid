@@ -10,8 +10,11 @@ import com.bumptech.glide.load.Transformation;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
-import com.hfs.easyimageloader.ILoaderStrategy;
-import com.hfs.easyimageloader.LoaderOptions;
+import com.hfs.easyimageloader.listener.ILoaderStrategy;
+import com.hfs.easyimageloader.options.LoaderOptions;
+import com.hfs.easyimageloader.transform.BlurTransformation;
+import com.hfs.easyimageloader.transform.CircleTransformation;
+import com.hfs.easyimageloader.transform.RotateTransformation;
 
 import java.util.ArrayList;
 import java.util.List;

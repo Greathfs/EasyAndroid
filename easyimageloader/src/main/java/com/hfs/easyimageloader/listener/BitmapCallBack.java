@@ -1,4 +1,4 @@
-package com.hfs.easyimageloader;
+package com.hfs.easyimageloader.listener;
 
 import android.graphics.Bitmap;
 
