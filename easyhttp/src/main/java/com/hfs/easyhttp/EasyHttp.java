@@ -71,6 +71,27 @@ public final class EasyHttp {
         return mCommonParams;
     }
 
+
+    /**
+     * 移除全局公共请求参数
+     */
+    public EasyHttp removeAllParams() {
+        if (mCommonParams != null) {
+            mCommonParams.clear();
+        }
+        return this;
+    }
+
+    /**
+     * 移除全局公共请求参数
+     */
+    public EasyHttp removeParam(String key) {
+        if (mCommonParams != null) {
+            mCommonParams.remove(key);
+        }
+        return this;
+    }
+
     /**
      * 获取全局公共请求头
      */
@@ -86,6 +107,26 @@ public final class EasyHttp {
             mCommonHeaders = new HttpHeaders();
         }
         mCommonHeaders.put(commonHeaders);
+        return this;
+    }
+
+    /**
+     * 移除全局公共请求参数
+     */
+    public EasyHttp removeAllHeaders() {
+        if (mCommonHeaders != null) {
+            mCommonHeaders.clear();
+        }
+        return this;
+    }
+
+    /**
+     * 移除全局公共请求参数
+     */
+    public EasyHttp removeHeader(String key) {
+        if (mCommonHeaders != null) {
+            mCommonHeaders.remove(key);
+        }
         return this;
     }
 

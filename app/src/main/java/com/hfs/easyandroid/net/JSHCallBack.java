@@ -55,6 +55,7 @@ public abstract class JSHCallBack extends CommonCallBack {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.put("Authorization", "bearer " + Configurations.getToken(context));
         httpHeaders.put("Cookie", "JSESSIONID=" + Configurations.getJSESSIONID(context));
+        EasyHttp.getInstance().removeAllHeaders();
         EasyHttp.getInstance().addCommonHeaders(httpHeaders);
     }
 }
