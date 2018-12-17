@@ -2,14 +2,20 @@ package com.hfs.easyhttp;
 
 import android.app.Application;
 import android.content.Context;
+import android.support.annotation.Nullable;
 
 import com.hfs.easyhttp.model.HttpHeaders;
 import com.hfs.easyhttp.model.HttpParams;
 import com.hfs.easyhttp.request.GetRequest;
 import com.hfs.easyhttp.request.PostRequest;
+import com.hfs.easyhttp.request.UploadRequest;
 import com.hfs.easyhttp.utils.PostType;
 
 import org.xutils.x;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author HuangFusheng
@@ -42,7 +48,7 @@ public final class EasyHttp {
      * 提供全局替换图片加载框架的接口，若切换其它框架，可以实现一键全局替换
      */
     public void init(Application context) {
-        sContext=context;
+        sContext = context;
         x.Ext.init(context);
         x.Ext.setDebug(true);
     }
@@ -84,22 +90,74 @@ public final class EasyHttp {
     }
 
 
-
+    /**
+     * get请求
+     *
+     * @param url
+     * @param requestCode
+     * @return
+     */
     public GetRequest get(String url, int requestCode) {
-        return new GetRequest(url,requestCode);
+        return new GetRequest(url, requestCode);
     }
 
+    /**
+     * post请求
+     *
+     * @param url
+     * @param requestCode
+     * @return
+     */
     public PostRequest post(String url, int requestCode) {
-        return new PostRequest(url,requestCode,PostType.NULL);
+        return new PostRequest(url, requestCode, PostType.NULL);
     }
 
+    /**
+     * post请求 表单形式
+     *
+     * @param url
+     * @param requestCode
+     * @return
+     */
     public PostRequest postWithForm(String url, int requestCode) {
-        return new PostRequest(url,requestCode,PostType.WITH_FORM);
+        return new PostRequest(url, requestCode, PostType.WITH_FORM);
     }
 
+    /**
+     * post请求 json形式
+     *
+     * @param url
+     * @param requestCode
+     * @return
+     */
     public PostRequest postWithJson(String url, int requestCode) {
-        return new PostRequest(url,requestCode,PostType.WITH_JSON);
+        return new PostRequest(url, requestCode, PostType.WITH_JSON);
     }
 
+    /**
+     * 上传文件 单张
+     *
+     * @param url
+     * @param requestCode
+     * @param file
+     * @return
+     */
+    public UploadRequest uploadFile(String url, int requestCode, @Nullable File file) {
+        List<File> list = new ArrayList<>();
+        list.add(file);
+        return new UploadRequest(url, requestCode, list);
+    }
+
+    /**
+     * 上传文件 多张
+     *
+     * @param url
+     * @param requestCode
+     * @param files
+     * @return
+     */
+    public UploadRequest uploadFile(String url, int requestCode, @Nullable List<File> files) {
+        return new UploadRequest(url, requestCode, files);
+    }
 
 }

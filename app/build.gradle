@@ -25,10 +25,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation('com.github.bumptech.glide:glide:4.7.1') {
+    implementation("com.github.bumptech.glide:glide:4.5.0") {
         exclude group: "com.android.support"
     }
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
     implementation 'jp.wasabeef:glide-transformations:4.0.0'
     implementation('com.squareup.picasso:picasso:2.71828') {
         exclude group: "com.android.support"
@@ -36,4 +36,10 @@ dependencies {
     implementation project(':easyimageloader')
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation project(':easyhttp')
+
+    implementation ("com.zhihu.android:matisse:0.4.3"){
+        exclude group: "com.android.support"
+    }
+    implementation 'com.github.HuanTanSheng:EasyPhotos:2.3.6'
+    implementation 'top.zibin:Luban:1.1.8'
 }

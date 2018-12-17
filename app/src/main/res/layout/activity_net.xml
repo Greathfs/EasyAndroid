@@ -39,6 +39,12 @@
             android:layout_height="wrap_content"
             android:onClick="postWithJsonByJson"
             android:text="PostWithJsonByJson"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="uploadFile"
+            android:text="UploadFile"/>
     </LinearLayout>
 
 </ScrollView>

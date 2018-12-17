@@ -120,7 +120,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
         @Override
         public void onError(Throwable ex, boolean isOnCallback) {
             ex.printStackTrace();
-            callBack.onLoadFailure(requestCode, ex.getLocalizedMessage());
+            callBack.onLoadFailure(requestCode, ex.toString());
 
         }
 
