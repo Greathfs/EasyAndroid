@@ -1,10 +1,10 @@
-package com.hfs.easyimageloader;
+package com.hfs.easysdk.image;
 
 import android.content.Context;
 import android.net.Uri;
 
-import com.hfs.easyimageloader.listener.ILoaderStrategy;
-import com.hfs.easyimageloader.options.LoaderOptions;
+import com.hfs.easysdk.image.listener.ILoaderStrategy;
+import com.hfs.easysdk.image.options.LoaderOptions;
 
 import java.io.File;
 

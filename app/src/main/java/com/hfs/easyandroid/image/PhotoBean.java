@@ -1,4 +1,4 @@
-package com.hfs.easyandroid;
+package com.hfs.easyandroid.image;
 
 import android.support.annotation.NonNull;
 

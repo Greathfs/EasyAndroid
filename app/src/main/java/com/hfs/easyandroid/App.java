@@ -2,8 +2,9 @@ package com.hfs.easyandroid;
 
 import android.app.Application;
 
+import com.hfs.easyhttp.EasyHttp;
 import com.hfs.easyimageloader.loader.GlideLoader;
-import com.hfs.easyimageloader.ImageLoader;
+import com.hfs.easyimageloader.EasyImageLoader;
 
 /**
  * @author HuangFusheng
@@ -19,19 +20,22 @@ public class App extends Application {
         super.onCreate();
         gContext = this;
         //初始化图片库
-        ImageLoader.getInstance().init(this,new GlideLoader());
+        EasyImageLoader.getInstance().init(this,new GlideLoader());
+
+        EasyHttp.getInstance().init(this);
+
     }
 
     @Override
     public void onTrimMemory(int level) {
         super.onTrimMemory(level);
-        ImageLoader.getInstance().onTrimMemory(level);
+        EasyImageLoader.getInstance().onTrimMemory(level);
     }
 
     @Override
     public void onLowMemory() {
         super.onLowMemory();
-        ImageLoader.getInstance().onLowMemory();
+        EasyImageLoader.getInstance().onLowMemory();
 
     }
 }

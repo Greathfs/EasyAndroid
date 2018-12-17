@@ -1,9 +1,11 @@
-package com.hfs.easyandroid;
+package com.hfs.easyandroid.image;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.hfs.easyandroid.R;
 
 /**
  * @author HuangFusheng

@@ -1,4 +1,4 @@
-package com.hfs.easyandroid;
+package com.hfs.easyandroid.image;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,7 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.hfs.easyimageloader.ImageLoader;
+import com.hfs.easyandroid.R;
+import com.hfs.easyimageloader.EasyImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +40,7 @@ public class PhotoAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         PhotoBean bean = curList.get(position);
         if (holder instanceof PhotoHolder) {
-            ImageLoader.getInstance()
+            EasyImageLoader.getInstance()
                     .load(bean.url)
                     .placeholder(R.mipmap.ic_launcher)
                     .into(((PhotoHolder) holder).imageView);

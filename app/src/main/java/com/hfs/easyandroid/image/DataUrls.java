@@ -1,4 +1,4 @@
-package com.hfs.easyandroid;
+package com.hfs.easyandroid.image;
 
 import java.util.Arrays;
 import java.util.List;

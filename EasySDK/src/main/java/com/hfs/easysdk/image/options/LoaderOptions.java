@@ -1,13 +1,13 @@
-package com.hfs.easyimageloader.options;
+package com.hfs.easysdk.image.options;
 
 import android.net.Uri;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IntRange;
 import android.view.View;
 
-import com.hfs.easyimageloader.listener.BitmapCallBack;
-import com.hfs.easyimageloader.listener.ILoaderStrategy;
-import com.hfs.easyimageloader.EasyImageLoader;
+import com.hfs.easysdk.image.ImageLoader;
+import com.hfs.easysdk.image.listener.BitmapCallBack;
+import com.hfs.easysdk.image.listener.ILoaderStrategy;
 
 import java.io.File;
 
@@ -109,12 +109,12 @@ public class LoaderOptions {
 
     public void into(View targetView) {
         this.targetView = targetView;
-        EasyImageLoader.getInstance().loadOptions(this);
+        ImageLoader.getInstance().loadOptions(this);
     }
 
     public void bitmap(BitmapCallBack callBack) {
         this.callBack = callBack;
-        EasyImageLoader.getInstance().loadOptions(this);
+        ImageLoader.getInstance().loadOptions(this);
     }
 
     public LoaderOptions loader(ILoaderStrategy imageLoader) {
