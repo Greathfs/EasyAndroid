@@ -2,9 +2,8 @@ package com.hfs.easyandroid;
 
 import android.app.Application;
 
-import com.hfs.easyhttp.EasyHttp;
-import com.hfs.easyimageloader.loader.GlideLoader;
-import com.hfs.easyimageloader.EasyImageLoader;
+import com.hfs.easy.http.EasyHttp;
+import com.hfs.easy.image.EasyImageLoader;
 
 /**
  * @author HuangFusheng
@@ -20,7 +19,7 @@ public class App extends Application {
         super.onCreate();
         gContext = this;
         //初始化图片库
-        EasyImageLoader.getInstance().init(this,new GlideLoader());
+        EasyImageLoader.getInstance().init(this);
 
         EasyHttp.getInstance().init(this);
 

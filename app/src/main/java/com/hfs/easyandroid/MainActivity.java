@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.hfs.easyandroid.image.ImageActivity;
-import com.hfs.easyandroid.net.NetActivity;
+import com.hfs.easyandroid.http.NetActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
