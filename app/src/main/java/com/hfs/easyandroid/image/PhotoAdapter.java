@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.hfs.easy.image.EasyImageLoader;
 import com.hfs.easyandroid.R;
-import com.hfs.easyimageloader.EasyImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;

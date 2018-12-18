@@ -39,6 +39,7 @@
 
         <activity android:name=".image.ImageActivity"/>
         <activity android:name=".http.NetActivity"/>
+        <activity android:name=".permission.PermissionActivity"/>
     </application>
 
 </manifest>

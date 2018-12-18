@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义描边的LinearLayout -->
+    <declare-styleable name="DrawLineLayout">
+        <attr name="lineColor" />
+        <attr name="lineWidth" />
+        <attr name="lineMarginLeft"></attr>
+        <attr name="lineMarginTop"></attr>
+        <attr name="lineMarginBottom"></attr>
+        <attr name="lineMarginRight"></attr>
+        <attr name="dealOnTouch" />
+        <attr name="lineGravity" />
+        <attr name="left_right_height"/>
+    </declare-styleable>
+
+
+</resources>

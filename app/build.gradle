@@ -41,4 +41,9 @@ dependencies {
     }
     implementation 'com.github.HuanTanSheng:EasyPhotos:2.3.6'
     implementation 'top.zibin:Luban:1.1.8'
+
+    implementation('com.github.hotchemi:permissionsdispatcher:2.4.0') {
+        exclude module: "support-v13"
+    }
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.2.0'
 }

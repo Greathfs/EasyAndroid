@@ -7,8 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.hfs.easy.http.EasyHttp;
 import com.hfs.easyandroid.R;
-import com.hfs.easyhttp.EasyHttp;
 import com.huantansheng.easyphotos.EasyPhotos;
 import com.huantansheng.easyphotos.models.album.entity.Photo;
 

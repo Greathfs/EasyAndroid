@@ -7,8 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.hfs.easy.image.EasyImageLoader;
 import com.hfs.easyandroid.R;
-import com.hfs.easyimageloader.EasyImageLoader;
 
 /**
  * @author HuangFusheng

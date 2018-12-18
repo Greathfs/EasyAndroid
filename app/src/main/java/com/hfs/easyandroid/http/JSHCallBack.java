@@ -3,10 +3,10 @@ package com.hfs.easyandroid.http;
 import android.content.Context;
 import android.text.TextUtils;
 
+import com.hfs.easy.http.EasyHttp;
+import com.hfs.easy.http.listener.CommonCallBack;
+import com.hfs.easy.http.model.HttpHeaders;
 import com.hfs.easyandroid.App;
-import com.hfs.easyhttp.EasyHttp;
-import com.hfs.easyhttp.listener.CommonCallBack;
-import com.hfs.easyhttp.model.HttpHeaders;
 
 import java.net.HttpCookie;
 import java.util.List;
