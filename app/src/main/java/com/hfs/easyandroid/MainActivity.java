@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.hfs.easyandroid.image.ImageActivity;
 import com.hfs.easyandroid.http.NetActivity;
+import com.hfs.easyandroid.log.LogActivity;
 import com.hfs.easyandroid.permission.PermissionActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,14 +22,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toImg(View view) {
-        startActivity(new Intent(this,ImageActivity.class));
+        startActivity(new Intent(this, ImageActivity.class));
     }
 
     public void toNet(View view) {
-        startActivity(new Intent(this,NetActivity.class));
+        startActivity(new Intent(this, NetActivity.class));
     }
 
     public void toPermission(View view) {
-        startActivity(new Intent(this,PermissionActivity.class));
+        startActivity(new Intent(this, PermissionActivity.class));
+    }
+
+    public void toLog(View view) {
+        startActivity(new Intent(this, LogActivity.class));
     }
 }
