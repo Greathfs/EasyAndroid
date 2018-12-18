@@ -36,16 +36,5 @@ public class LogActivity extends AppCompatActivity {
             LogUtil.printStackTrace(e);
         }
 
-        LogUtil.v("tag", "hacket");
-        LogUtil.d("tag", "hacket");
-        LogUtil.i("tag", "hacket");
-        LogUtil.w("tag", "hacket");
-        LogUtil.e("tag", "hacket");
-        LogUtil.wtf("tag", "hacket");
-        LogUtil.json("tag", "{\"name\":\"hacket\",\"pass\":\"123456\"}");
-        LogUtil.xml("tag", "<root><name>hacket</name><pass>123456</pass></root>");
-
-        LogUtil.e(null, "this is a null tag");
-
     }
 }
