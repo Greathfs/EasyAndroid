@@ -35,6 +35,12 @@
             android:onClick="toLog"
             android:text="跳转到日志"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toJson"
+            android:text="跳转到Json"/>
+
 
 
     </LinearLayout>

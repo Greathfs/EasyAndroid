@@ -23,13 +23,13 @@ import top.zibin.luban.Luban;
 /**
  * @author HuangFusheng
  * @date 2018/12/17
- * @description NetActivity
+ * @description HttpActivity
  */
-public class NetActivity extends AppCompatActivity {
+public class HttpActivity extends AppCompatActivity {
 
     private static final int REQ_CODE = 100;
 
-    private static final String TAG = "NetActivity";
+    private static final String TAG = "HttpActivity";
 
     private static final String BASE_URL = "https://dev.yilihuo.com/";
 
@@ -192,7 +192,7 @@ public class NetActivity extends AppCompatActivity {
                     files.add(new File(photo.path));
                 }
                 try {
-                    uploadImgs(Luban.with(NetActivity.this).load(files).get());
+                    uploadImgs(Luban.with(HttpActivity.this).load(files).get());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

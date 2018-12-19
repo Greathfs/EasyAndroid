@@ -38,9 +38,10 @@
         <activity android:name=".image.ListActivity"/>
 
         <activity android:name=".image.ImageActivity"/>
-        <activity android:name=".http.NetActivity"/>
+        <activity android:name=".http.HttpActivity"/>
         <activity android:name=".permission.PermissionActivity"/>
         <activity android:name=".log.LogActivity"/>
+        <activity android:name=".json.JsonActivity"/>
     </application>
 
 </manifest>
